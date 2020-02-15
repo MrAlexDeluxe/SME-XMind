@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="SonarQubePU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>nl.digkas.sonarqube.domain.CeScannerContext</class>
+        <class>nl.digkas.sonarqube.domain.RulesProfiles</class>
+        <class>nl.digkas.sonarqube.domain.UserTokens</class>
+        <class>nl.digkas.sonarqube.domain.SonarqubeIssues</class>
+        <class>nl.digkas.sonarqube.domain.PermTemplatesUsers</class>
+        <class>nl.digkas.sonarqube.domain.SonarqubeRules</class>
+        <class>nl.digkas.sonarqube.domain.QualityGates</class>
+        <class>nl.digkas.sonarqube.domain.Organizations</class>
+        <class>nl.digkas.sonarqube.domain.ProjectMeasures</class>
+        <class>nl.digkas.sonarqube.domain.Snapshots</class>
+        <class>nl.digkas.sonarqube.domain.PermTemplatesGroups</class>
+        <class>nl.digkas.sonarqube.domain.CeQueue</class>
+        <class>nl.digkas.sonarqube.domain.CeTaskCharacteristics</class>
+        <class>nl.digkas.sonarqube.domain.QprofileChanges</class>
+        <class>nl.digkas.sonarqube.domain.Project</class>
+        <class>nl.digkas.sonarqube.domain.CeActivity</class>
+        <class>nl.digkas.sonarqube.domain.QprofileEditUsers</class>
+        <class>nl.digkas.sonarqube.domain.ProjectLinks</class>
+        <class>nl.digkas.sonarqube.domain.QprofileEditGroups</class>
+        <class>nl.digkas.sonarqube.domain.Course</class>
+        <class>nl.digkas.sonarqube.domain.ManualMeasures</class>
+        <class>nl.digkas.sonarqube.domain.Plugins</class>
+        <class>nl.digkas.sonarqube.domain.Groups</class>
+        <class>nl.digkas.sonarqube.domain.FileSources</class>
+        <class>nl.digkas.sonarqube.domain.Users</class>
+        <class>nl.digkas.sonarqube.domain.UserRoles</class>
+        <class>nl.digkas.sonarqube.domain.CeTaskInput</class>
+        <class>nl.digkas.sonarqube.domain.EsQueue</class>
+        <class>nl.digkas.sonarqube.domain.InternalProperties</class>
+        <class>nl.digkas.sonarqube.domain.WebhookDeliveries</class>
+        <class>nl.digkas.sonarqube.domain.PermissionTemplates</class>
+        <class>nl.digkas.sonarqube.domain.DuplicationsIndex</class>
+        <class>nl.digkas.sonarqube.domain.ProjectQprofiles</class>
+        <class>nl.digkas.sonarqube.domain.StudentCourseGrade</class>
+        <class>nl.digkas.sonarqube.domain.OrganizationMembers</class>
+        <class>nl.digkas.sonarqube.domain.ProjectBranches</class>
+        <class>nl.digkas.sonarqube.domain.QualityGateConditions</class>
+        <class>nl.digkas.sonarqube.domain.RulesMetadata</class>
+        <class>nl.digkas.sonarqube.domain.Events</class>
+        <class>nl.digkas.sonarqube.domain.GroupRoles</class>
+        <class>nl.digkas.sonarqube.domain.RuleRepositories</class>
+        <class>nl.digkas.sonarqube.domain.IssueChanges</class>
+        <class>nl.digkas.sonarqube.domain.DefaultQprofiles</class>
+        <class>nl.digkas.sonarqube.domain.DensityPerCommitFile</class>
+        <class>nl.digkas.sonarqube.domain.CommitFiles</class>
+        <class>nl.digkas.sonarqube.domain.Issues</class>
+        <class>nl.digkas.sonarqube.domain.Commit</class>
+        <class>nl.digkas.sonarqube.domain.Notifications</class>
+        <class>nl.digkas.sonarqube.domain.AnalysisProperties</class>
+        <class>nl.digkas.sonarqube.domain.Projects</class>
+        <class>nl.digkas.sonarqube.domain.Properties</class>
+        <class>nl.digkas.sonarqube.domain.Metrics</class>
+        <class>nl.digkas.sonarqube.domain.ActiveRules</class>
+        <class>nl.digkas.sonarqube.domain.Rules</class>
+        <class>nl.digkas.sonarqube.domain.PermTplCharacteristics</class>
+        <class>nl.digkas.sonarqube.domain.ActiveRuleParameters</class>
+        <class>nl.digkas.sonarqube.domain.RulesParameters</class>
+        <class>nl.digkas.sonarqube.domain.Student</class>
+        <class>nl.digkas.sonarqube.domain.OrgQprofiles</class>
+        <class>nl.digkas.sonarqube.domain.GumtreeDiff</class>
+        <class>nl.digkas.sonarqube.domain.LoadedTemplates</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost:9092/sonar"/>
+            <property name="javax.persistence.jdbc.user" value=""/>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+        </properties>
+    </persistence-unit>
+</persistence>
